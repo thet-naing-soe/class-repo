@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/little_lemon.jpg" alt="little_lemon">
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Location</a>
+        <a href="#">Blog</a>
+    </nav>
+    <main>
+        <h1>Complex Form</h1>
+        <form action="" method="">
+            <div>
+                <label for="email_address">Email Address</label>
+                <input type="email" name="email_address" id="email_address">
+            </div>
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" name="booking_date" id="booking_date">
+            </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <input type="range" name="booking_people" id="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <label for="agreement">I agree to the cancellation policy.</label>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Copyright Little Lemon</p>
+    </footer>
+</body>
+</html>
