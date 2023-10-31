@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://littlelemon/">
+    <meta property="og:image" content="little_lemon.jpg">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/little_lemon.jpg" alt="little_lemon">
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Location</a>
+        <a href="#">Blog</a>
+    </nav>
+    <main>
+        <h1>Video</h1>
+        <video width="320px" height="240px" controls>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <form action="">
+            <div>
+                <label for="rate">Rating</label>
+                <input type="range" name="rate" id="rate" min="1" max="5" list="ratings">
+                <datalist id="ratings">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
+            </div>
+            <button type="submit">Submit Rating</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Copyright Little Lemon</p>
+    </footer>
+</body>
+</html>
