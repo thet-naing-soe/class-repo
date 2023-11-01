@@ -1,0 +1,16 @@
+* {
+    margin: 50px;
+    padding: 50px;
+    background-color: pink;
+}
+.ball {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    animation: myanimate 3s linear infinite alternate-reverse ;
+}
+
+@keyframes myanimate {
+    from {transform: rotate3d(0, 0, 0, 0deg);}
+    to {transform: rotate3d(100, 100, 100, 360deg);}
+}
